@@ -15,9 +15,7 @@ exports.getListBook = async (req, res) => {
         name: {
           [Op.like]: `%${req.query.name}%`,
         },
-        author: {
-          [Op.like]: `%${req.query.author}%`,
-        },
+
       },
       include: [
         {
